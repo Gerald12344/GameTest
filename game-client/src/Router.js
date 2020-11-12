@@ -4,40 +4,24 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Info from "./Components/info";
 import game from "./Components/game";
-import Nav from "./Components/Nav"
-import Home from "./Components/Home"
+import Nav from "./Components/Nav";
+import Home from "./Components/Home";
+import Links from "./Components/Nav";
 
-function Links() {
-  return (
-      <nav class="NavBar">
-        <ul>
-        <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/Info">Info</Link>
-          </li>
-          <li>
-            <Link to="/game">Game</Link>
-          </li>
-        </ul>
-      </nav>
-  );
-} 
+
 
 function App() {
   return (
-    <main>
-    <game />
-        <Router>  
-        <Links />
-          <Switch>
-            <Route path="/:filter?/Info" component={Info} exact />
-            <Route path="/:filter?/game" component={game} exact />
-            <Route path="/:filter?/" component={Home} exact />
-          </Switch>
-        </Router>
-        </main>
+    <main className="main">
+      <Router>
+        <Links className="main"/>
+        <Switch>
+          <Route path="/:filter?/Info" component={Info} exact />
+          <Route path="/:filter?/game" component={game} exact />
+          <Route path="/:filter?/" component={Home} exact />
+        </Switch>
+      </Router>
+    </main>
   );
 }
 
