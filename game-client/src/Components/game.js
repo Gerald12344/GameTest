@@ -11,7 +11,7 @@ export default (props) => {
     const getCountTimeout = () => {
         setTimeout(() => {
             debounce = false
-        }, 100);
+        }, 10);
     };
 
     const socket = React.useContext(SocketIOContext);
