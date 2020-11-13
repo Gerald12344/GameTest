@@ -1,0 +1,30 @@
+{
+  "name": "gametest",
+  "version": "1.0.0",
+  "description": "Just a test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js && cd game-client && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gerald12344/GameTest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gerald12344/GameTest/issues"
+  },
+  "homepage": "https://github.com/Gerald12344/GameTest#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^4.2.0",
+    "helmet-csp": "^3.2.0",
+    "i": "^0.3.6",
+    "npm": "^6.14.8",
+    "referrer-policy": "^1.2.0",
+    "socket.io": "^3.0.1"
+  }
+}
